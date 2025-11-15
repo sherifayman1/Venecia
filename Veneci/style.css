@@ -1,0 +1,201 @@
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #fafafa;
+    color: #222;
+}
+.container { 
+    width: 90%; 
+    margin: auto; 
+}
+
+.btn {
+    background: #000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover { background: #444; }
+
+.header {
+    background: #000;
+    color: #fff;
+    padding: 15px 0;
+}
+.header .logo {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+}
+.header .container{
+    text-align: center;
+}
+.main-navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.main-navbar {
+    background: #4a0000;
+}
+
+.main-navbar .container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 25px;
+    padding: 12px 0;
+    
+}
+
+.main-navbar a:hover {
+    color: #ddd;
+}
+
+
+
+
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.product-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.order-btn {
+    margin-top: 10px;
+    background: black;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.order-popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+.order-content {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 12px;
+}
+.order-content input,
+.order-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+}
+.close-btn {
+    background: #777;
+    color: white;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+}
+
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.contact-page h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-item {
+    margin-bottom: 25px;
+}
+
+.contact-item h3 {
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+.contact-item a {
+    color: #0077cc;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    flex: 1; 
+}
+
+.site-footer {
+    background: #000;
+    color: #ccc;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: auto;   
+}
+
+.site-footer p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+
